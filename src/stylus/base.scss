@@ -1,0 +1,576 @@
+@import './comm.scss';
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 376px) {
+  html {
+    font-size: 26.66vw;
+  }
+}
+
+html {
+  min-height: 100%;
+  background: $main-bg;
+}
+
+img{
+  max-width: 100%;
+}
+body {
+  margin: 0 auto !important;
+  // -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100% !important;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+* {
+  margin: 0;
+  padding: 0;
+  touch-action: pan-y;
+  font-size: 0.12rem;
+  font-family: -apple-system,BlinkMacSystemFont,'PingFang SC','Segoe UI',Roboto,'Helvetica Neue',Helvetica,'Hiragino Sans GB','Microsoft YaHei',SimSun,sans-serif;
+}
+ul {
+  list-style: none;
+}
+input[type='text'],
+input[type='password'] {
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: $inp-p;
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: $inp-p;
+}
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder {
+  color: $inp-p;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px $login-bg inset !important;
+  -webkit-text-fill-color: $font-login !important;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow:none;
+}
+.ff-input{
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  outline: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  resize: none;
+  font-size: inherit;
+  color: inherit;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 100%;
+  font-size: 0.16rem;
+  color: $font-login;
+}
+input::-webkit-input-placeholder {
+    color: $login-f-pwd;
+}
+input:-moz-placeholder {
+  color: $login-f-pwd;
+}
+input::-moz-placeholder {
+  color: $login-f-pwd;
+}
+input:-ms-input-placeholder {
+  color: $login-f-pwd;
+}
+
+
+.scroll-con{
+  position: absolute;
+  top: 0.44rem;
+  left: 0;
+  right: 0;
+  bottom: 0rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100% - 0.44rem);
+}
+.scroll-con-small{
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100% - 1.5rem);
+}
+
+.scroll-con-small-h{
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100% - 3.5rem);
+}
+
+
+.but-175{
+  width: 1.75rem;
+  margin: 0.2rem auto 0;
+  span{
+    font-size: 0.18rem;
+    position: relative;
+    .lb-load{
+      position: absolute;
+      right: -0.25rem;
+      top: 0.03rem;
+    }
+  }
+}
+.comm-but{
+  background-color: $logo-but-bg;
+  height: 0.44rem;
+  border-radius: 0.06rem;
+  font-size: 0.18rem;
+  color: $login-f-pwd;
+  text-align: center;
+  line-height: 0.44rem;
+  overflow: hidden;
+  a,span{
+    font-size: 0.18rem;
+  }
+}
+.dial-bug{
+  font-size: 0.14rem!important;
+  line-height: 0.34rem!important;
+  height: 0.34rem!important;
+  a,span{
+    font-size: 0.14rem!important;
+  }
+}
+.cur-but{
+  background-image: linear-gradient(90deg,$but-light-l 0%, $login-lin 100%), linear-gradient($but-deep, $but-deep)!important;
+  color: $font-color;
+  span{
+    color: $font-color;
+  }
+}
+.bg{
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    filter: "Alpha(opacity=60)";
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+}
+.bgw{
+    background: rgba(0,0,0,0);
+    left: 0;
+    top: 0;
+    filter: "Alpha(opacity=60)";
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+}
+
+.tran90{
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+.tran270{
+  transform: rotate(270deg);
+  transition: all 0.3s;
+}
+.mb15{
+  margin-bottom: 0.15rem;
+}
+.p0{
+  padding: 0!important
+}
+.pr20{
+  padding-right: 0.2rem!important;
+}
+.f13{
+  font-size: 0.13rem!important;
+}
+.f16{
+  font-size: 0.16rem!important;
+}
+.f18{
+  font-size: 0.18rem!important;
+}
+.f22{
+  font-size: 0.22rem!important;
+}
+
+// 登入list样式
+.login-list{
+  .cur-lin{
+    &:after{
+      width: 50%;
+      transition: all 1s;
+    }
+    &:before{
+      width: 50%;
+      transition: all 1s;
+    }
+    .login-pi{
+      i{
+        left: 0rem;
+        color: $font-but-wall;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .cur-redlin{
+    &:after{
+      width: 50%;
+      transition: all 1s;
+      background-color: rgba($font-red, 0.3);
+    }
+    &:before{
+      width: 50%;
+      transition: all 1s;
+      background-color: rgba($font-red, 0.3);
+    }
+    .login-pi{
+      i{
+        left: 0rem;
+        color: $font-red;
+        transition: all 0.5s;
+      }
+    }
+  }
+  li{
+    height: 0.4rem;
+    font-size: 0.15rem;
+    line-height: 0.4rem;
+    color:rgba($login-lin, 0.7);
+    padding-top: 0.2rem;
+    position: relative;
+    border-bottom: 0.01rem solid rgba($reg-lin, 0.7);
+    &:after{
+      content: '';
+      height: 0.01rem;
+      width: 0;
+      transition: all 1s;
+      background-color: rgba($font-but-wall, 0.5);
+      position: absolute;
+      left: 0;
+      bottom: -0.01rem;
+    }
+    &:before{
+      content: '';
+      height: 0.01rem;
+      width: 0;
+      transition: all 1s;
+      background-color: rgba($font-but-wall, 0.5);
+      position: absolute;
+      right: 0;
+      bottom: -0.01rem;
+    }
+    .ll-wrap{
+      display: flex;
+    }
+    .log-ls{
+      width: 0.9rem;
+      color: $font-login;
+      font-size: 0.16rem;
+      text-align: left;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 0.1rem;
+        width: 0.01rem;
+        background-color: rgba($login-f-pwd, 0.3);
+        right: 0.1rem;
+        top: 0.17rem;
+      }
+    }
+    .login-sp{
+      letter-spacing: 0.16rem;
+    }
+    .login-pi{
+      width: 100%;
+      position: relative;
+      font-size: 0.16rem;
+      input{
+        line-height: 0.4rem;
+        height: 0.4rem;
+      }
+      i{
+        position: absolute;
+        top: 0.34rem;
+        left: -0.7rem;
+        font-style: normal;
+        color: rgba($font-but-wall, 0);
+        transition: all 0.5s;
+        z-index: 0;
+      }
+      .cg-eye{
+        position: absolute;
+        top: 0.03rem;
+        right: 0
+      }
+    }
+  }
+}
+
+.lis-nodate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $login-bg;
+  flex-wrap: wrap;
+}
+.lis-loading{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.2rem 0;
+  align-items: center;
+  margin: 0 auto;
+  color: rgba($font-color, 0.6);
+  span{
+    padding: 0 0.1rem;
+  }
+}
+
+
+.fgp-list{
+    .cur-lin{
+      &:after{
+        width: 50%;
+        transition: all 1s;
+      }
+      &:before{
+        width: 50%;
+        transition: all 1s;
+      }
+      .login-pi{
+        i{
+          left: 0rem;
+          color: $font-but-wall;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .cur-redlin{
+      &:after{
+        width: 50%;
+        transition: all 1s;
+        background-color: rgba($font-red, 0.3);
+      }
+      &:before{
+        width: 50%;
+        transition: all 1s;
+        background-color: rgba($font-red, 0.3);
+      }
+      .login-pi{
+        i{
+          left: 0rem;
+          color: $font-red;
+          transition: all 0.5s;
+        }
+      }
+    }
+  li{
+      border-bottom: 0.01rem solid rgba($reg-lin, 0.7);
+      font-size: 0.15rem;
+      line-height: 0.36rem;
+      color:rgba($login-lin, 0.7);
+      padding-top: 0.18rem;
+      text-align: left;
+      position: relative;
+      &:after{
+        content: '';
+        height: 0.01rem;
+        width: 0;
+        transition: all 1s;
+        background-color: rgba($font-but-wall, 0.5);
+        position: absolute;
+        left: 0;
+        bottom: -0.01rem;
+      }
+      &:before{
+        content: '';
+        height: 0.01rem;
+        width: 0;
+        transition: all 1s;
+        background-color: rgba($font-but-wall, 0.5);
+        position: absolute;
+        right: 0;
+        bottom: -0.01rem;
+      }
+      .fgp-l-tit{
+        font-size: 0.16rem;
+        color: $font-login;
+      }
+    .login-pi{
+      width: 100%;
+      position: relative;
+      input{
+        line-height: 0.4rem;
+        height: 0.4rem;
+        font-size: 0.16rem;
+      }
+      i{
+        position: absolute;
+        top: 0.38rem;
+        left: 1rem;
+        font-style: normal;
+        color: rgba($font-but-wall, 0);
+        transition: all 0.5s;
+        z-index: 0;
+      }
+      .cg-eye{
+        position: absolute;
+        top: 0.03rem;
+        right: 0
+      }
+    }
+    .l-v-warp{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg{
+        width: 0.18rem;
+        height: 0.18rem;
+      }
+    }
+  }
+}
+
+.login-arg{
+  display: flex;
+  justify-content: center;
+  margin:0.5rem 0 0.3rem;
+  align-content: center;
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    padding-left: 0.05rem;
+    line-height: 0.14rem;
+    color: rgba($font-login, 0.8)
+  }
+  span{
+    color: $but-light-l;
+    padding: 0 0.02rem
+  }
+}
+
+
+.md-scroll-view{
+  overflow: auto!important;
+}
+.md-scroll-view-more{
+  line-height: 0.4rem;
+  font-size: 0.13rem;
+  padding: 0;
+  text-align: center;
+  color: rgba($font-login, 0.3);
+  font-size: 0.12rem;
+}
+
+
+// 仿input框样式
+.input-text{
+  display: inline-block;
+  vertical-align: middle;
+  flex: 1;
+  height: 0.4rem;
+  text-align: left;
+  font-size: 0.22rem;
+  line-height: 0.4rem;
+  position: relative;
+  color: $icon !important;
+  &::before{
+    content: attr(data-content);
+  }
+  em{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.15rem;
+    color: $login-f-pwd;
+    font-style: normal;
+  }
+}
+.input-active::after{
+  content: '';
+  border-right: 0.01rem solid $wallet-btn-bg;
+  height: 50%;
+  opacity: 1;
+  animation: focus 1s forwards infinite;
+}
+@keyframes focus{
+  from{
+      opacity: 1;
+  }to{
+      opacity: 0;
+  }
+}
+.modal-open{
+  position: fixed;
+  height: 100%;
+  .disabled-scroll{
+    overflow: hidden!important;
+  }
+}

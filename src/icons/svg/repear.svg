@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+<defs><style type="text/css">.up-down{animation: rotateupDown 1.5s linear infinite;}@keyframes rotateupDown {from {transform: rotate(0deg);transform-origin: center center;}to {transform: rotate(359deg);transform-origin: center center;}}</style></defs><g id="tc_2" data-name="tc 2"><g id="tc_1-2" data-name="tc 1">
+<path d="M4.3 31A4.3 4.3 0 010 26.7V4.3A4.3 4.3 0 014.3 0h22.4A4.3 4.3 0 0131 4.3v22.4a4.3 4.3 0 01-4.3 4.3zm0-28.8a2.1 2.1 0 00-2.1 2.1v22.4a2.1 2.1 0 002.1 2.1h22.4a2.1 2.1 0 002.1-2.1V4.3a2.1 2.1 0 00-2.1-2.1z"/>
+<path d="M10.17 24.07a2.17 2.17 0 110-4.33h1.56l2.6-4.5-2.6-4.5h-1.56a2.17 2.17 0 110-4.34h10.66a2.17 2.17 0 110 4.34h-1.56l-2.6 4.5 2.6 4.5h1.56a2.17 2.17 0 110 4.33z" class="up-down"/></g></g></svg>
