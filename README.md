@@ -1,4 +1,4 @@
-# ⛔️ DEPRECATED
+﻿# ⛔️ DEPRECATED
 
 <em>**This repo is deprecated and not mainted any more. Use [Framework7-CLI](https://framework7.io/cli/) instead. Please, don't open new issues and don't send any PRs to this repository**</em>
 
@@ -8,14 +8,9 @@ A full-featured Framework7 Vue with Webpack setup with hot-reload & css extracti
 
 ## Usage
 
-### 1. Download this repository
-```
-git clone https://github.com/framework7io/framework7-template-vue-webpack my-app
-```
-
 Repository will be downloaded into `my-app/` folder
 
-### 2. Instal dependencies
+### 1. Instal dependencies
 
 Go to the downloaded repository folder and run:
 ```
@@ -24,7 +19,7 @@ npm install
 
 This will download latest version of Framework7, Framework7-Vue, Vue and required icon fonts (to `/src/fonts/`)
 
-### 3. Run the app
+### 2. Run the app
 
 ```
 npm run dev
@@ -32,7 +27,7 @@ npm run dev
 
 App will be opened in browser at `http://localhost:8080/`
 
-### 4. Build app for production
+### 3. Build app for production
 
 ```
 npm run build
@@ -82,11 +77,6 @@ npm run build-dev
 npm run build-prod
 ```
 
-
-#  "dev": "webpack-dev-server --config ./build/webpack.config.dev.js",
-#  "prod": "webpack-dev-server --config ./build/webpack.config.prod.js",
-#  "dev01": "webpack --mode development --config  ./build/webpack.config.dev.js",
-
 ## Project Structure
 
 * `src/index.html` - main app HTML
@@ -95,6 +85,6 @@ npm run build-prod
 * `src/css` - put custom app CSS styles here. Don't forget to import them in `main.js`
 * `src/pages` - app `.vue` pages
 * `src/app.js` - main app file where you include/import all required libs and init app
-* `src/routes.js` - app routes
+* `src/router` - app routes
 * `src/app.vue` - main app structure/component
 * `/static/` - folder with extra static assets that will be copied into output folder
