@@ -16,7 +16,7 @@
   },
   "author": "Fay",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.11",
     "framework7": "^4.0.0",
     "framework7-icons": "^2.2.0",
